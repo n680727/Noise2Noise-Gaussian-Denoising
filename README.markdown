@@ -46,8 +46,10 @@ python config.py train --noise=gaussian --noise2noise=true --long-train=true --t
 ```
 
 ### 訓練結果
-訓練過程中，模型的 PSNR 曲線圖如下（請將圖片檔案上傳至專案並更新下方路徑）：
-![訓練 PSNR 曲線圖](path/to/psnr_curve.png)
+訓練過程中，模型的 PSNR 曲線圖如下：
+
+![image](https://github.com/user-attachments/assets/c14b5354-9480-45b1-81f3-164bcdab5cf5)
+
 
 ## 驗證模型
 
@@ -73,17 +75,15 @@ python config.py infer-image --image=C:\Users\5ji6r\noise2noise\img\man_log.png 
 - 中值濾波器去雜訊：**31.03**
 - Noise2Noise 模型去雜訊：**38.34**
 
-比較圖如下（請將圖片檔案上傳至專案並更新下方路徑）：
-![含高斯雜訊圖像](path/to/noisy_image.png)
-![中值濾波器去雜訊](path/to/median_filtered_image.png)
-![Noise2Noise 去雜訊](path/to/denoised_image.png)
+比較圖如下：
+
+![image](https://github.com/user-attachments/assets/cf92bda8-c5ee-4911-8573-6fc35c9d44d2)
+![image](https://github.com/user-attachments/assets/93ba5734-de1e-40aa-8abd-e0434616ce43)
+![image](https://github.com/user-attachments/assets/f2d4cce3-7400-490a-94c3-4ac9e9c794aa)
+
 
 這些結果顯示，Noise2Noise 模型在去雜訊效果上顯著優於傳統的中值濾波器方法，PSNR 提升了約 7.31（相較於中值濾波器）。
 
 ## 參考資料
 
-本專案參考了 NVIDIA Research 的 [Noise2Noise 儲存庫](https://github.com/NVlabs/noise2noise)。感謝他們的開源貢獻！
-
-## 聯繫
-
-如有問題或建議，歡迎提交 Issue 或 Pull Request！
+本專案參考了 NVIDIA Research 的 [Noise2Noise 儲存庫](https://github.com/NVlabs/noise2noise)。
